@@ -10,7 +10,7 @@ const getPokemon = async id => {
 }
 
 const fetchPokemons = async () => {
-    for (let index = 1; index <= 30; index++) {
+    for (let index = 1; index <= numberOfPokemon; index++) {
         await getPokemon(index)
     }
 }
